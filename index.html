@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SinLímites</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+
+    <!-- Saltar al contenido principal -->
+    <a href="#contenido" class="visually-hidden-focusable btn btn-primary">Saltar al contenido principal</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Barra de navegación principal">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SinLímites</a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quienes-somos">Quiénes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <a class="btn btn-primary" href="/public/iniciar-sesion.html" role="button">Iniciar Sesión</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main id="contenido" class="container my-4" role="main">
+        <!-- Sección: Bienvenida -->
+        <section id="bienvenida">
+            <h1 class="mb-4 text-center">Bienvenido a SinLímites</h1>
+            <p class="lead text-center">Explora nuestras categorías y comienza a disfrutar de todas las funcionalidades.</p>
+        </section>
+
+        <!-- Sección: Quiénes Somos -->
+        <section id="quienes-somos" class="my-5">
+            <h2 class="mb-4 text-center">Quiénes Somos</h2>
+            <p class="lead text-center">Conoce más sobre nuestra misión, visión y valores.</p>
+            <article>
+                <h3>Misión</h3>
+                <p>
+                    Nuestra misión es conectar a las personas a través de actividades y comunidades, 
+                    fomentando la colaboración y el intercambio de experiencias en un entorno seguro 
+                    y accesible.
+                </p>
+            </article>
+            <article>
+                <h3>Visión</h3>
+                <p>
+                    Ser la plataforma líder en la creación de redes sociales y eventos que empoderen a 
+                    las personas a encontrar su pasión y conectar con otros de manera significativa.
+                </p>
+            </article>
+            <article>
+                <h3>Valores</h3>
+                <ul>
+                    <li><strong>Inclusión:</strong> Todos son bienvenidos, sin importar sus intereses, origen o habilidades.</li>
+                    <li><strong>Innovación:</strong> Siempre buscamos nuevas formas de mejorar la experiencia del usuario.</li>
+                    <li><strong>Colaboración:</strong> Creemos en el poder de trabajar juntos para lograr más.</li>
+                    <li><strong>Sostenibilidad:</strong> Promovemos actividades y comunidades que tengan un impacto positivo.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Sección: Contacto -->
+        <section id="contacto" class="my-5">
+            <h2 class="mb-4 text-center">Contacto</h2>
+            <p class="lead text-center">¿Tienes preguntas o necesitas ayuda? ¡Estamos aquí para ti!</p>
+            <form>
+                <div class="mb-3">
+                    <label for="nombreContacto" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombreContacto" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="emailContacto" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="emailContacto" placeholder="nombre@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="asuntoContacto" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" id="asuntoContacto" placeholder="Motivo de tu mensaje" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensajeContacto" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensajeContacto" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <article class="mt-5">
+                <h3>Información de Contacto</h3>
+                <p>
+                    Puedes comunicarte con nosotros a través de los siguientes medios:
+                </p>
+                <ul>
+                    <li><strong>Email:</strong> soporte@sinlimites.com</li>
+                    <li><strong>Teléfono:</strong> +34 123 456 789</li>
+                    <li><strong>Dirección:</strong> Calle Ejemplo 123, Ciudad, País</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

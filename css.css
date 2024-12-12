@@ -1,0 +1,48 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para imágenes de las cards */
+.card img {
+    object-fit: cover; /* Ajusta la imagen al contenedor sin deformarla */
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    height: 200px; /* Define una altura fija para todas las imágenes */
+    border-top-left-radius: calc(0.25rem - 1px); /* Mantiene las esquinas redondeadas de Bootstrap */
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+/* Opcional: ajustar el diseño responsivo */
+@media (max-width: 768px) {
+    .card img {
+        height: 150px; /* Reduce la altura en pantallas más pequeñas */
+    }
+}
+
+/* Estilo adicional para las cards */
+.card {
+    border: 1px solid #ddd; /* Borde ligero para separar las tarjetas */
+    border-radius: 0.25rem; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que las imágenes no se salgan del contenedor */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de ampliación al pasar el mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+}
+
+/* Títulos y textos dentro de las cards */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-text {
+    text-align: justify;
+    font-size: 1rem;
+    color: #555;
+}

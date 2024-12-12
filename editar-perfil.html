@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+    <a href="#contenido" class="visually-hidden-focusable btn btn-primary">Saltar al contenido principal</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Barra de navegación principal">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SinLímites</a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="contenido" class="container my-5" role="main">
+        <h1 class="mb-4 text-center">Editar Perfil</h1>
+        <p class="lead text-center">A continuación, puedes modificar la información de tu perfil. Todos los campos son obligatorios para garantizar un mejor servicio.</p>
+        <form class="row g-4" action="procesar-editar-perfil.php" method="POST">
+            <fieldset class="border p-4 rounded">
+                <legend class="float-none w-auto px-2">Información Personal</legend>
+
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre Completo</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="nombre" 
+                        name="nombre" 
+                        placeholder="Ingresa tu nombre completo" 
+                        aria-label="Nombre" 
+                        required>
+                </div>
+                <div class="col-md-6">
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="direccion" 
+                        name="direccion" 
+                        placeholder="Ingresa tu dirección completa" 
+                        aria-label="Dirección" 
+                        required>
+                </div>
+                <div class="col-md-6">
+                    <label for="telefono" class="form-label">Teléfono de Contacto</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="telefono" 
+                        name="telefono" 
+                        placeholder="Ingresa tu número de teléfono" 
+                        aria-label="Teléfono" 
+                        required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input 
+                        type="email" 
+                        class="form-control" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Ingresa tu correo electrónico" 
+                        aria-label="Correo Electrónico" 
+                        required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Indícanos tus gustos</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="gustos" 
+                        name="gustos" 
+                        placeholder="Ingresa tus gustos" 
+                        aria-label="Gustos" 
+                        required>
+                </div>
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Indícanos tus preferencias de accesibilidad</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="accesibilidad" 
+                        name="accesibilidad" 
+                        placeholder="Ingresa tus preferencias de accesibilidad" 
+                        aria-label="Accesibilidad" 
+                        required>
+                </div>
+            </fieldset>
+
+            <!-- Sección de Seguridad -->
+            <fieldset class="border p-4 rounded mt-4">
+                <legend class="float-none w-auto px-2">Seguridad</legend>
+
+                <div class="col-md-6">
+                    <label for="password" class="form-label">Nueva Contraseña</label>
+                    <input 
+                        type="password" 
+                        class="form-control" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Deja en blanco si no quieres cambiarla" 
+                        aria-label="Nueva Contraseña">
+                </div>
+                <div class="col-md-6">
+                    <label for="password-confirm" class="form-label">Confirmar Contraseña</label>
+                    <input 
+                        type="password" 
+                        class="form-control" 
+                        id="password-confirm" 
+                        name="password-confirm" 
+                        placeholder="Confirma la nueva contraseña" 
+                        aria-label="Confirmar Contraseña">
+                </div>
+            </fieldset>
+            <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-primary px-4">Guardar Cambios</button>
+                <a href="home.html" class="btn btn-secondary px-4">Cancelar</a>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
